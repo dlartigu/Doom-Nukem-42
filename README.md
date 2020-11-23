@@ -57,13 +57,14 @@ It's relatively common, here are the main ones (you can see them in the setting 
 In the menu selection you can play the story or try to high score in arcade mode.
 If you have a very powerful computer you can try to run the game in 1080p (or higher) with every setting maxed. You'll see a big texture difference!
 
-- Main Menu
-
-  ![Main Menu](https://github.com/dlartigu/Doom-Nukem-42/blob/main/gif/Menu.gif)
-
 - Low vs High texture quality + AA
 
   ![Low vs High](https://github.com/dlartigu/Doom-Nukem-42/blob/main/gif/lowvshigh.png)
+  
+
+- Main Menu
+
+  ![Main Menu](https://github.com/dlartigu/Doom-Nukem-42/blob/main/gif/Menu.gif)
 
 - Basics on level 1
 
