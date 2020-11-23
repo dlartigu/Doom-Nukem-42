@@ -5,13 +5,13 @@ Based on advanced raycasting, recreate the first Wolfenstein/Doom experience in 
 
 Easy to compile and run!
 
-```
 Mac:
+```
 make && ./doom-nukem
 ```
 
-```
 Linux:
+```
 sudo make && ./doom-nukem
 ```
 
