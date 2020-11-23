@@ -42,7 +42,9 @@ It's relatively common, here are the main ones (you can see them in the settings
 In the menu selection you can play the story or try to high score in arcade mode.
 If you have a very powerfull computer you can try to run the game in 1080p (or higher) with every settings maxed. You'll see a big texture difference!
 
-![https://github.com/dlartigu/Doom-Nukem-42/blob/main/gif/lowvshigh.png]()
+![Low vs Hgh](https://github.com/dlartigu/Doom-Nukem-42/blob/main/gif/lowvshigh.png)
+
+
 
 
 
