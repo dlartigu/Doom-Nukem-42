@@ -1,6 +1,21 @@
 # Doom-Nukem-42
 Based on advanced raycasting, recreate the first Wolfenstein/Doom experience in C using a Library 'just to display the pixels', everything needs to be running on a CPU. (in 1992 GPU were a dream)
-Easy to compile, to run it on make just 'make', and on Linux 'sudo make'!
+
+## **Get Started**
+
+Easy to compile, just 'make && ./doom-nukem' on Mac, and on Linux 'sudo make && ./doom-nukem'!
+
+```
+Mac:
+make && ./doom-nukem
+```
+
+```
+Linux:
+sudo make && ./doom-nukem
+```
+
+
 
 ## **What I have done on this project ?**
 
