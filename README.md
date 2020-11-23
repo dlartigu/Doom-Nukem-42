@@ -3,7 +3,7 @@ Based on advanced raycasting, recreate the first Wolfenstein/Doom experience in 
 
 ## **Get Started**
 
-Easy to compile, just 'make && ./doom-nukem' on Mac, and on Linux 'sudo make && ./doom-nukem'!
+Easy to compile and run!
 
 ```
 Mac:
@@ -58,34 +58,46 @@ In the menu selection you can play the story or try to high score in arcade mode
 If you have a very powerful computer you can try to run the game in 1080p (or higher) with every setting maxed. You'll see a big texture difference!
 
 - Main Menu
+
   ![Main Menu](https://github.com/dlartigu/Doom-Nukem-42/blob/main/gif/Menu.gif)
 
 - Low vs High texture quality + AA
+
   ![Low vs High](https://github.com/dlartigu/Doom-Nukem-42/blob/main/gif/lowvshigh.png)
 
 - Basics on level 1
+
   ![Basics](https://github.com/dlartigu/Doom-Nukem-42/blob/main/gif/level1/1.gif)
   ![Press F to fly](https://github.com/dlartigu/Doom-Nukem-42/blob/main/gif/level1/2.gif)
 
 - It is forbidden to get off before the train has come to a complete stop
+
   ![Train](https://github.com/dlartigu/Doom-Nukem-42/blob/main/gif/level2/1.gif)
 
 - Don't forget the ticket to the next level!
+
   ![Ticket](https://github.com/dlartigu/Doom-Nukem-42/blob/main/gif/level3/2.gif)
 
 - The Den
+
   ![The Den](https://github.com/dlartigu/Doom-Nukem-42/blob/main/gif/level3/1.gif)
 
 - The Arena
+
   ![The Arena](https://github.com/dlartigu/Doom-Nukem-42/blob/main/gif/levelfinal/1.gif)
 
 Arcade:
 
 - CIRCUS
+
   ![Circus](https://github.com/dlartigu/Doom-Nukem-42/blob/main/gif/arcade1/1.gif)
+
 - MINE
+
   ![Mine](https://github.com/dlartigu/Doom-Nukem-42/blob/main/gif/arcade2/1.gif)
+
 - MAGMA
+
   ![MAGMA](https://github.com/dlartigu/Doom-Nukem-42/blob/main/gif/arcade3/1.gif)
 
 
