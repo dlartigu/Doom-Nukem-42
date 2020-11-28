@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_load_hud.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: dlartigu <dlartigu@student.42.fr>          +#+  +:+       +#+        */
+/*   By: niboute <niboute@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/09/20 17:00:04 by dlartigu          #+#    #+#             */
-/*   Updated: 2020/11/19 15:57:45 by dlartigu         ###   ########.fr       */
+/*   Updated: 2020/11/25 18:10:05 by niboute          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -64,7 +64,8 @@ void			ft_load_intro_textures(t_env *env)
 {
 	if (env->text_intro)
 		ft_free_texture_tab(&env->text_intro);
-	if (!(env->text_intro = (SDL_Texture**)ft_memalloc(sizeof(SDL_Texture*) * 10)))
+	if (!(env->text_intro = (SDL_Texture**)ft_memalloc(sizeof(SDL_Texture*)
+	* 10)))
 		ft_fct_error("malloc failed");
 	env->text_intro[0] = load_bmp_to_texture(env->ren, STORY_LVL1_1);
 	env->text_intro[1] = load_bmp_to_texture(env->ren, STORY_LVL1_2);

@@ -6,7 +6,7 @@
 /*   By: niboute <niboute@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/10/09 14:32:52 by niboute           #+#    #+#             */
-/*   Updated: 2020/11/17 20:21:21 by niboute          ###   ########.fr       */
+/*   Updated: 2020/11/26 14:55:00 by niboute          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ static void				set_sprite_dist(t_env *env, t_elem *floor,
 
 	dist = (floor->posx - sprite->posx) * (floor->posx - sprite->posx)
 	+ (floor->posy - sprite->posy) * (floor->posy - sprite->posy);
-	if (fabs(dist) > 0.10)
+	if (fabs(dist) > 0.0001)
 	{
 		env->spriteorder[*i] = sprite;
 		env->spritedistance[*i] = dist;
@@ -89,8 +89,8 @@ void					store_sprites(t_env *env, t_elem *floor)
 	(void)floor;
 	ptr = floor->items;
 	floor->nb_sprites = 0;
-	ft_bzero((void*)env->spriteorder, 512 * sizeof(t_sprite*));
-	ft_bzero((void*)env->spritedistance, 512 * sizeof(double));
+	ft_bzero((void*)env->spriteorder, 4096 * sizeof(t_sprite*));
+	ft_bzero((void*)env->spritedistance, 4096 * sizeof(double));
 	while (ptr)
 	{
 		set_sprite_dist(env, floor, (t_sprite*)ptr->content, &i);

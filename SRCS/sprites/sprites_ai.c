@@ -6,7 +6,7 @@
 /*   By: niboute <niboute@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/05 13:04:40 by niboute           #+#    #+#             */
-/*   Updated: 2020/11/14 23:58:42 by niboute          ###   ########.fr       */
+/*   Updated: 2020/11/25 17:37:42 by niboute          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,7 @@ void				sight_hit(t_elem *floor, t_ray *ray)
 	if ((int)ray->mapy == (int)floor->posy
 		&& (int)ray->mapx == (int)floor->posx)
 		ray->hit = 1;
-	if (str[WALL] == '1' || str[SPRITE] == '6')
+	if (str[WALL] == '1' || str[SPRITE] >= '6')
 		ray->hit = 2;
 	else if (str[0] == '4')
 		ray->windows_hit++;
@@ -42,7 +42,7 @@ int					check_sprite_move(char ***map, t_sprite *sprite,
 	if (map[(int)(next[1] + hbox[1])][(int)(next[0] + hbox[0])][WALL] != '0')
 		return (0);
 	if (((int)sprite->posx != (int)next[0] || (int)sprite->posy != (int)next[1])
-	&& map[(int)next[1]][(int)next[0]][SPRITE] == '6')
+	&& map[(int)next[1]][(int)next[0]][SPRITE] >= '6')
 		return (0);
 	return (1);
 }

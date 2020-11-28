@@ -6,7 +6,7 @@
 /*   By: niboute <niboute@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/09/04 22:01:15 by dlartigu          #+#    #+#             */
-/*   Updated: 2020/11/18 18:47:35 by niboute          ###   ########.fr       */
+/*   Updated: 2020/11/26 14:52:32 by niboute          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -1829,8 +1829,8 @@ typedef struct			s_env
 	int					switchlock;
 	SDL_Texture			*gameover1;
 	SDL_Texture			*gameover2;
-	t_sprite			*spriteorder[512];
-	double				spritedistance[512];
+	t_sprite			*spriteorder[4096];
+	double				spritedistance[4096];
 	uint8_t				*window_buffer;
 	double				*zbuffer;
 	double				*sprite_zbuffer;

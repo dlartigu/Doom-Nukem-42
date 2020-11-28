@@ -6,7 +6,7 @@
 /*   By: niboute <niboute@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/10/09 14:33:01 by niboute           #+#    #+#             */
-/*   Updated: 2020/11/17 09:57:47 by niboute          ###   ########.fr       */
+/*   Updated: 2020/11/25 17:35:25 by niboute          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -74,8 +74,6 @@ static void		calc_sprite_p2(t_env *env, t_elem *floor, t_spritecast *spr)
 	spr->texnum = spr->data->texid[spr->dir][spr->animation];
 	spr->spritex = spr->sprite->posx - floor->posx;
 	spr->spritey = spr->sprite->posy - floor->posy;
-	if (fabs(spr->spritex) < 0.1 && fabs(spr->spritey) < 0.1)
-		return ;
 	spr->planex = cos(floor->angle - 1.5708);
 	spr->planey = sin(floor->angle - 1.5708);
 	spr->invdet = 1.0 / (spr->planex * sin(floor->angle) - cos(floor->angle)

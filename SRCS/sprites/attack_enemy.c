@@ -6,7 +6,7 @@
 /*   By: niboute <niboute@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/05 15:50:22 by dlartigu          #+#    #+#             */
-/*   Updated: 2020/11/18 17:54:20 by niboute          ###   ########.fr       */
+/*   Updated: 2020/11/25 17:35:10 by niboute          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -53,7 +53,11 @@ void				attack_enemy(t_elem *floor, t_sprite *target,
 	else
 		attack_enemy_p2(floor, target);
 	if (target->hp > 0 && target->hit)
-		SDL_AddTimer(200, timer_hit, (void*)&target->hit);
+		SDL_AddTimer(400, timer_hit, (void*)&target->hit);
 	else if (target->hp < 0 && target->hit)
+	{
+		floor[floor->currentstair].new[(int)target->posy][(int)target->posx]
+			[SPRITE] = '0';
 		target->hp = 0;
+	}
 }

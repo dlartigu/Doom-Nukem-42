@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   init_sprites.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: dlartigu <dlartigu@student.42.fr>          +#+  +:+       +#+        */
+/*   By: niboute <niboute@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/10/09 14:33:07 by niboute           #+#    #+#             */
-/*   Updated: 2020/11/18 00:28:50 by dlartigu         ###   ########.fr       */
+/*   Updated: 2020/11/25 17:49:13 by niboute          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@ void	init_sprites_data_p5(t_sprite_data *sprites_data)
 	sprites_data[ENEMY_2].speed = 4;
 	sprites_data[ENEMY_DEAD_2].hscale = 0.8;
 	sprites_data[ENEMY_DEAD_2].wscale = 0.8;
-	sprites_data[ENEMY_DEAD_2].grounded = 4;
+	sprites_data[ENEMY_DEAD_2].grounded = 1;
 	sprites_data[ENEMY_DEAD_2].max_dir = 8;
 	sprites_data[ENEMY_DEAD_2].max_anims = 9;
 	sprites_data[ENEMY_3].hscale = 1;
@@ -42,7 +42,7 @@ void	init_sprites_data_p4(t_sprite_data *sprites_data)
 	sprites_data[DEVASTATOR_PROJECTILE].max_dir = 8;
 	sprites_data[DEVASTATOR_PROJECTILE].max_anims = 1;
 	sprites_data[DEVASTATOR_PROJECTILE].speed = 0.2;
-	sprites_data[DEVASTATOR_PROJECTILE].range = 1;
+	sprites_data[DEVASTATOR_PROJECTILE].range = 2;
 	sprites_data[DEVASTATOR_PROJECTILE].max_hp = 5000;
 	sprites_data[ENEMY_1].hscale = 0.4;
 	sprites_data[ENEMY_1].wscale = 0.4;
@@ -55,7 +55,7 @@ void	init_sprites_data_p4(t_sprite_data *sprites_data)
 	sprites_data[ENEMY_1].speed = 0.7;
 	sprites_data[ENEMY_DEAD_1].hscale = 0.4;
 	sprites_data[ENEMY_DEAD_1].wscale = 0.4;
-	sprites_data[ENEMY_DEAD_1].grounded = 0.5;
+	sprites_data[ENEMY_DEAD_1].grounded = 0.3;
 	sprites_data[ENEMY_DEAD_1].max_dir = 1;
 	sprites_data[ENEMY_DEAD_1].max_anims = 7;
 	sprites_data[ENEMY_2].hscale = 0.8;

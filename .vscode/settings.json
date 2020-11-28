@@ -1,0 +1,11 @@
+{
+	"files.associations": {
+		"*.tcc": "c",
+		"algorithm": "c",
+		"memory": "c",
+		"random": "c",
+		"limits": "c",
+		"stdexcept": "c",
+		"tuple": "c"
+	}
+}

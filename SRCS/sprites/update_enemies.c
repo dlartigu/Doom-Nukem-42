@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   update_enemies.c                                   :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: dlartigu <dlartigu@student.42.fr>          +#+  +:+       +#+        */
+/*   By: niboute <niboute@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/18 17:46:09 by niboute           #+#    #+#             */
-/*   Updated: 2020/11/18 19:46:24 by dlartigu         ###   ########.fr       */
+/*   Updated: 2020/11/25 17:38:37 by niboute          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@ void	update_enemies(t_elem *floor)
 	while (ptr)
 	{
 		spr = (t_sprite*)ptr->content;
-		if (spr->wave <= floor->fire_stat)
+		if (spr->wave <= floor->fire_stat && spr->hp > 0)
 		{
 			floor[floor->currentstair].new[(int)spr->posy]
 			[(int)spr->posx][SPRITE] = '6';

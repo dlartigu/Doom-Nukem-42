@@ -6,7 +6,7 @@
 /*   By: niboute <niboute@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/10/09 15:58:49 by niboute           #+#    #+#             */
-/*   Updated: 2020/11/17 20:07:29 by niboute          ###   ########.fr       */
+/*   Updated: 2020/11/25 17:56:11 by niboute          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -41,7 +41,7 @@ void	init_sprites_data_p7(t_sprite_data *sprites_data)
 	sprites_data[ENEMY_BOSS].sight = 100;
 	sprites_data[ENEMY_DEAD_BOSS].hscale = 3;
 	sprites_data[ENEMY_DEAD_BOSS].wscale = 3;
-	sprites_data[ENEMY_DEAD_BOSS].grounded = 0;
+	sprites_data[ENEMY_DEAD_BOSS].grounded = -2;
 	sprites_data[ENEMY_DEAD_BOSS].max_dir = 1;
 	sprites_data[ENEMY_DEAD_BOSS].max_anims = 8;
 	sprites_data[WARP_NXT_FLOOR].hscale = 0.5;
@@ -64,7 +64,7 @@ void	init_sprites_data_p7(t_sprite_data *sprites_data)
 
 void	init_sprites_data_p6(t_sprite_data *sprites_data)
 {
-	sprites_data[ENEMY_DEAD_3].hscale = 0.75;
+	sprites_data[ENEMY_DEAD_3].hscale = 1;
 	sprites_data[ENEMY_DEAD_3].wscale = 0.75;
 	sprites_data[ENEMY_DEAD_3].grounded = 0.25;
 	sprites_data[ENEMY_DEAD_3].max_dir = 1;
@@ -80,12 +80,12 @@ void	init_sprites_data_p6(t_sprite_data *sprites_data)
 	sprites_data[ENEMY_4].speed = 3;
 	sprites_data[ENEMY_DEAD_4].hscale = 0.85;
 	sprites_data[ENEMY_DEAD_4].wscale = 0.85;
-	sprites_data[ENEMY_DEAD_4].grounded = 0.15;
+	sprites_data[ENEMY_DEAD_4].grounded = 0.6;
 	sprites_data[ENEMY_DEAD_4].max_dir = 1;
 	sprites_data[ENEMY_DEAD_4].max_anims = 9;
 	sprites_data[ENEMY_BOSS].hscale = 3;
 	sprites_data[ENEMY_BOSS].wscale = 3;
-	sprites_data[ENEMY_BOSS].grounded = 0;
+	sprites_data[ENEMY_BOSS].grounded = -2;
 	sprites_data[ENEMY_BOSS].max_dir = 1;
 	sprites_data[ENEMY_BOSS].max_anims = 8;
 	init_sprites_data_p7(sprites_data);
